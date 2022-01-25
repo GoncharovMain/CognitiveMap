@@ -9,8 +9,8 @@ namespace CognitiveMap
 	{
 		public static void Main()
 		{
-			Graph graph = new Graph("data_link.csv");
-			Factor factor = new Factor("factors_changes.csv");
+			Graph graph = new Graph("example/graph.csv");
+			Factor factor = new Factor("example/factors_changes.csv");
 
 			factor.Print();
 			factor = factor + graph;
@@ -21,8 +21,8 @@ namespace CognitiveMap
 			factor.Print();
 			consonans.Print();
 
-			factor.Save("resources/factor_gon.csv");
-			consonans.Save("resources/consonans_gon.csv");
+			factor.Save("example/factor_result.csv");
+			consonans.Save("example/consonans.csv");
 		}
 	}
 }
